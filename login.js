@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // If valid, show success message and redirect
         alert('Logged in successfully!');
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     });
 
     // For demo purposes, register link just shows an alert
