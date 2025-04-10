@@ -30,7 +30,7 @@ Car Galleria is a web application designed to showcase a collection of cars, aim
 1.  **Clone the repository**:
 
     ```
-    git clone [(https://github.com/24nirbhay/car-galleria)]
+    git clone [https://github.com/24nirbhay/car-galleria.git]
     ```
 2.  **Open HTML files in your browser**:
 
