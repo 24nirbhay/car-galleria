@@ -30,17 +30,11 @@ Car Galleria is a web application designed to showcase a collection of cars, aim
 1.  **Clone the repository**:
 
     ```
-    git clone [https://github.com/24nirbhay/car-galleria]
+    git clone [(https://github.com/24nirbhay/car-galleria)]
     ```
 2.  **Open HTML files in your browser**:
 
     -   Navigate to the project directory and open `index.html` to view the Car Galleria.
-
-## 🖼️ Gallery
-
-The gallery displays various cars with interactive hover effects and lightbox functionality.
-
-![Gallery Preview](url-to-your-image-hosting-service)
 
 ## 🔑 User Authentication
 
@@ -59,20 +53,6 @@ The gallery displays various cars with interactive hover effects and lightbox fu
 
 The project uses a comprehensive `styles.css` file for consistent and modern styling.
 
-## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute.
-
----
-
-**Note**:
-
--   Replace `[https://github.com/24nirbhay/car-galleria]` with the actual URL of your GitHub repository.
--   Replace `24nirbhay/car-galleria` with your actual GitHub username and repository name in the shield badges.
--   Replace `url-to-your-image-hosting-service` with a link to an image preview of your gallery. You might need to upload a screenshot of your project to a hosting service like Imgur or similar.
--   Consider adding a `LICENSE` and `CONTRIBUTING.md` file to your repository if you plan to accept contributions.
 
