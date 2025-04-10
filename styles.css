@@ -1,0 +1,437 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 5px; 
+}
+
+header nav ul li {
+    margin-right: 0; 
+}
+
+header nav a {
+    color: #fff;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #337ab7;
+}
+
+header nav a.active {
+    color: #337ab7;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.hero-image {
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    width: 50%;
+    padding: 2em;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+/* Image Section Styles */
+
+.image-section {
+    padding: 2em;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+/* Body Styles */
+
+.body {
+    padding: 2em;
+}
+
+.body h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.body p {
+    margin-bottom: 20px;
+}
+
+.body button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.body button:hover {
+    background-color: #23527c;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials li {
+    margin-right: 20px;
+}
+
+.socials a {
+ color: #fff;
+    font-size: 20px;
+}
+
+.socials a:hover {
+    color: #337ab7;
+}
+
+/* Gallery Styles */
+
+.gallery {
+    padding: 2em;
+    margin-top: 52px;
+
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.gallery-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.gallery-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.gallery-item a {
+    display: inline-block;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+    color: white;
+}
+
+.lightbox-content img {
+    max-height: 70vh;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Gallery item transitions now handled by jQuery */
+.gallery-item {
+    transition: none;
+}
+
+/* About Section Styles */
+
+.about {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.curator-message {
+    text-align: center;
+    color: #fff;
+    background-color: #28292a;
+    border-radius: 48px;
+}
+
+.curator-message h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.curator-message p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+/* Add Cars Section Styles */
+
+.add-cars {
+    padding: 2em;
+    margin-top: 60px;
+}
+
+.add-cars-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-cars-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-group input[type="text"], .form-group input[type="number"], .form-group input[type="file"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #23527c;
+}
+
+/* Car Section Styles */
+
+.car {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    
+}
+
+.car-image {
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.car-details {
+    width: 50%;
+    padding: 2em;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.car-details h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.car-details p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.car-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.car-details ul li {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.car-details button {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 250px;
+}
+
+.car-details button:hover {
+    background-color: #23527c;
+}

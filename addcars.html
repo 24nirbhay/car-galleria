@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Car</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="about.html" >About Us</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="addcars.html" class="active">Add Cars</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<!-- Add Cars Section -->
+<section class="add-cars">
+    <div class="add-cars-form">
+        <h2>Add a New Car</h2>
+        <form>
+            <div class="form-group">
+                <label for="car-name">Car Name:</label>
+                <input type="text" id="car-name" name="car-name" required>
+            </div>
+            <div class="form-group">
+                <label for="car-year">Car Year:</label>
+                <input type="number" id="car-year" name="car-year" required>
+            </div>
+            <div class="form-group">
+                <label for="car-model">Car Model:</label>
+                <input type="text" id="car-model" name="car-model" required>
+            </div>
+            <div class="form-group">
+                <label for="parent-company">Parent Company:</label>
+                <input type="text" id="parent-company" name="parent-company" required>
+            </div>
+            <div class="form-group">
+                <label for="cc">ENGINE CC:</label>
+                <input type="number" id="cc" name="cc" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" required>
+            </div>
+            <div class="form-group">
+                <label for="popular-in-country">Popular in Country:</label>
+                <input type="text" id="popular-in-country" name="popular-in-country" required>
+            </div>
+            <button type="submit">Add Car</button>
+        </form>
+    </div>
+</section>
+
+
+
+<!--Footer Section-->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Car Galleria. All rights reserved.</p>
+            <p>Designed and developed by <a href="#">ZOD</a></p>
+        </div>
+    </footer>
+</body>
+</html>
