@@ -1,8 +1,8 @@
 # 🚗 Car Galleria
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-![GitHub Stars](https://img.shields.io/github/stars/your-username/car-galleria?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/your-username/car-galleria?style=social)
+![GitHub Stars](https://img.shields.io/github/stars/24nirbhay/car-galleria?style=social)
+
 
 ## ✨ Overview
 
